@@ -1,0 +1,93 @@
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; chatset=utf-8">
+<link rel= "shortcut icon" href= "images\icon.ico" type="image/x-icon">
+<title>
+
+RetroDisks
+
+</title>
+</head>
+
+<body>
+
+	<!-- Основной блок сайта -->
+	<link href="style.css" rel="stylesheet"  type="text/css" />
+	<div id = "basicfull">
+	<!--Шапка сайта-->
+		<div id="head-site">
+			<a><img src="images\Logo.png"/></a>
+			<figure class = "Email"><img src="images\logoEmail.png" alt = "EKatGirlFun@yandex.ru" title = "EKatGirlFun@yandex.ru" align= "left"/><figcaption>EKatGirlFun@yandex.ru, Факс: (262)46-09</figcaption></figure>
+			<figure class = "Address"><img src = "images\Address.png" alt = " Казань" title = "Казань" align="left" /><figcaption>Казань, ул.Минская, д.28 </figcaption></figure>
+			<figure class = "PhoneText"><img src = "images\LogoPhone.png" alt = " +7 (904) 665-55-24 " title = " +7 (904) 665-55-24 " align="left"  /> <figcaption> +7 (904) 665-55-24</figcaption> </figure>
+				<div class="d3">
+					<form>
+						<input class="place_for_search" type="search" id="text-to-find" value="" placeholder="Поиск по странице...." autofocus>
+						<button type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value=" " title="Начать поиск"/>
+					</form>
+				</div>
+		</div>
+		<!-- Верхнее меню сайта -->
+    <div id ="menu-top">
+        <div class ="bg-1">
+            <ul>
+            <li><a href="O_nas.html">О нас</a></li>
+            <li><a href="Assortiment.html">Ассортимент</a></li>
+            <li><a href="Otzivi.html">Отзывы</a></li>
+            <li><a href="Buy.html">Купить диск</a></li>
+            <li><a href="index.html">Назад</a></li>
+            <li class="none-bg"><a href="Contact.html">Контакты</a></li>
+			<li><a href="Basket.html">Корзина</a></li>
+            </ul>
+        </div>
+        <div class="bg-2"></div>
+    </div><!-- Левое меню и Контент -->
+		<div id="content">
+             
+           <!-- Контент - правый блок -->
+        
+
+				<form class="formanket">
+					<h1 class="formanket_title">Отправьте нам анкету, мы разберёмся с вашей проблемой</h1>
+
+					<div>
+						<input class="formanket_input">
+						<label>Опишите кратко вашу проблему</label>
+					</div>
+					<div>
+						<input class="formanket_input" onkeyup="var yratext=/['A-я']/; if(yratext.test(this.value)) this.value=''">
+						<label>Введите сюда ваш номер телефона</label>
+					</div>
+
+					<button class="formanket_button"><a href="#win2">Отправить</a></button>
+
+				</form>
+				<!-- Ссылки на вызов модальных окон-->
+ 
+<!-- Модальное окно №2 -->
+<a href="#x" class="overlay" id="win2"></a>
+<div class="popup">
+<center>Ваша заявка будет рассмотрена. <p>(<i><small>Нет, сервер не существует</small></i>)</p></center>
+<a class="close"title="Закрыть" href="#close"></a>
+</div>
+					<p>Или вы можете обратиться к нам:</p>
+					<p>По почте: EKatGirlFun@yandex.ru</p>
+					<p>По телефону: +7 (904) 665-55-24</p>
+
+		
+		</div>
+	</div>
+        
+            
+             
+            
+			
+         
+        </div>
+		
+	</div>	
+	<script src="script\script.js"></script>
+</body>
+</html>
